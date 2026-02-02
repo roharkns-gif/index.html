@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>SmileCare Dental Clinic</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: Arial, Helvetica, sans-serif; background:#f9fbfd; color:#333; scroll-behavior: smooth;}
+  header { background:#0d6efd; color:white; padding:20px; text-align:center;}
+  nav { background:#084298; padding:10px; text-align:center; position:sticky; top:0; z-index:1000;}
+  nav a { color:white; margin:0 12px; text-decoration:none; font-weight:bold; font-size:15px;}
+  nav a:hover { text-decoration:underline;}
+  .hero { background:linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1400&q=80'); background-size:cover; background-position:center; color:white; padding:110px 20px; text-align:center;}
+  .hero h1 { font-size:42px; margin-bottom:12px;}
+  .hero p { font-size:18px; margin-bottom:25px;}
+  .btn { background:#0d6efd; color:white; padding:12px 22px; border:none; border-radius:5px; text-decoration:none; font-weight:bold; font-size:15px; display:inline-block;}
+  .btn:hover { background:#084298;}
+  .section { padding:60px 20px; max-width:1100px; margin:auto; }
+  .section h2 { text-align:center; margin-bottom:40px; color:#0d6efd; font-size:32px; }
+  .about { text-align:center; max-width:850px; margin:auto; line-height:1.8; font-size:16px;}
+  .services { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:20px;}
+  .service-box { background:white; padding:25px 20px; border-radius:12px; box-shadow:0 0 12px rgba(0,0,0,0.06); text-align:center; transition:transform 0.3s ease, box-shadow 0.3s ease;}
+  .service-box:hover { transform:translateY(-5px); box-shadow:0 8px 20px rgba(0,0,0,0.12);}
+  .service-box h3 { color:#0d6efd; margin-bottom:10px;}
+  .why-us { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px; text-align:center;}
+  .why-box { background:#e9f2ff; padding:22px 15px; border-radius:10px; font-weight:bold; font-size:15px;}
+  .doctor { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:30px; align-items:center; margin-bottom:40px;}
+  .doctor img { width:100%; border-radius:15px; box-shadow:0 0 15px rgba(0,0,0,0.1);}
+  .doctor-info h3 { color:#0d6efd; margin-bottom:10px;}
+  .doctor-info p { line-height:1.7; font-size:15px;}
+  .testimonial-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:20px; max-width:1000px; margin:auto;}
+  .testimonial-box { background:white; padding:25px 20px; border-radius:12px; box-shadow:0 0 12px rgba(0,0,0,0.06); font-style:italic; font-size:14px;}
+  .testimonial-box span { display:block; margin-top:12px; font-weight:bold; font-style:normal; color:#0d6efd;}
+  .appointment { background:#0d6efd; color:white; padding:60px 20px;}
+  .appointment h2 { color:white;}
+  .appointment form { max-width:600px; margin:auto; display:grid; gap:15px;}
+  .appointment input, .appointment textarea { padding:12px; border-radius:5px; border:none; font-size:15px; outline:none;}
+  .appointment button { background:white; color:#0d6efd; padding:12px; border:none; border-radius:5px; font-size:16px; font-weight:bold; cursor:pointer;}
+  .appointment button:hover { background:#e6efff;}
+  .contact-info { text-align:center; line-height:1.9; font-size:15px;}
+  footer { background:#084298; color:white; text-align:center; padding:20px; font-size:14px;}
+  .whatsapp-float { position:fixed; width:55px; height:55px; bottom:25px; right:25px; background-color:#25d366; color:#fff; border-radius:50%; text-align:center; font-size:28px; box-shadow:2px 2px 8px rgba(0,0,0,0.3); z-index:100; display:flex; align-items:center; justify-content:center; text-decoration:none;}
+  .whatsapp-float:hover { background-color:#1ebe5d;}
+  @media (max-width:600px){.hero h1{font-size:30px}.hero p{font-size:15px} nav a{margin:0 6px;font-size:14px}}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>SmileCare Dental Clinic</h1>
+  <p>Healthy Teeth. Confident Smile.</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#doctor">Doctor</a>
+  <a href="#appointment">Appointment</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+  <h1>Your Smile, Our Priority</h1>
+  <p>Modern, painless, and affordable dental care for the whole family.</p>
+  <a href="#appointment" class="btn">Book Appointment</a>
+</section>
+
+<section class="section" id="about">
+  <h2>About Us</h2>
+  <p class="about">
+    SmileCare Dental Clinic provides advanced dental treatments in a clean, comfortable, and friendly environment. Our experienced dentists focus on pain-free care, long-lasting results, and patient satisfaction. Every patient deserves a confident, healthy smile.
+  </p>
+</section>
+
+<section class="section" id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="service-box"><h3>Teeth Cleaning</h3><p>Professional cleaning to remove plaque and keep your smile healthy.</p></div>
+    <div class="service-box"><h3>Teeth Whitening</h3><p>Safe cosmetic treatments to brighten your teeth naturally.</p></div>
+    <div class="service-box"><h3>Dental Implants</h3><p>Permanent solutions to replace missing teeth confidently.</p></div>
+    <div class="service-box"><h3>Braces & Aligners</h3><p>Modern orthodontic treatments for perfectly aligned teeth.</p></div>
+    <div class="service-box"><h3>Root Canal</h3><p>Painless procedures to save infected or damaged teeth.</p></div>
+    <div class="service-box"><h3>Kids Dentistry</h3><p>Gentle and friendly dental care for children of all ages.</p></div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Why Choose Us</h2>
+  <div class="why-us">
+    <div class="why-box">✔ Experienced Dentists</div>
+    <div class="why-box">✔ Latest Technology</div>
+    <div class="why-box">✔ Affordable Pricing</div>
+    <div class="why-box">✔ Same-Day Appointments</div>
+  </div>
+</section>
+
+<section class="section" id="doctor">
+  <h2>Meet Our Dentist</h2>
+  <div class="doctor">
+    <img src="https://images.unsplash.com/photo-1606813902914-08c3c86c1599?auto=format&fit=crop&w=900&q=80" alt="Dentist">
+    <div class="doctor-info">
+      <h3>Dr. Ayesha Khan</h3>
+      <p>BDS, MDS – 10+ years of experience in cosmetic and restorative dentistry. Gentle, caring, and committed to long-term oral health.</p>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <h2 style="text-align:center;color:#0d6efd;">Patient Reviews</h2>
+  <div class="testimonial-grid">
+    <div class="testimonial-box">⭐⭐⭐⭐⭐<br/>"Best dental clinic experience! Very professional and friendly staff."<span>— Rahul Sharma</span></div>
+    <div class="testimonial-box">⭐⭐⭐⭐⭐<br/>"My braces treatment was smooth and painless. Highly recommended!"<span>— Neha Verma</span></div>
+    <div class="testimonial-box">⭐⭐⭐⭐⭐<br/>"Clean clinic, modern equipment, and great doctors. 10/10 service."<span>— Aman Gupta</span></div>
+  </div>
+</section>
+
+<section class="appointment" id="appointment">
+  <h2>Book an Appointment</h2>
+  <form onsubmit="submitForm(event)">
+    <input type="text" placeholder="Full Name" required />
+    <input type="email" placeholder="Email Address" required />
+    <input type="tel" placeholder="Phone Number" required />
+    <input type="date" required />
+    <textarea rows="4" placeholder="Your Message"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<section class="section" id="contact">
+  <h2>Contact Us</h2>
+  <div class="contact-info">
+    📍 New Delhi, India<br/>
+    📞 +91-90000-00000<br/>
+    📧 info@smilecaredental.com<br/>
+    🕘 Mon–Sat: 9:00 AM – 8:00 PM
+  </div>
+</section>
+
+<footer>
+  © 2026 SmileCare Dental Clinic. All Rights Reserved.
+</footer>
+
+<a href="https://wa.me/919000000000?text=Hello%20SmileCare%20Dental%20Clinic,%20I%20would%20like%20to%20book%20an%20appointment." class="whatsapp-float" target="_blank" title="Chat on WhatsApp">🟢</a>
+
+<script>
+  function submitForm(e) { e.preventDefault(); alert("Thank you! Your appointment request has been submitted."); }
+</script>
+
+</body>
+</html>
